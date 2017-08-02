@@ -20,3 +20,7 @@ The `-s` parameter print after the comment of the rules what is the name.
 Refer to [Using PHP Code Sniffer Tool](https://www.jetbrains.com/phpstorm/help/using-php-code-sniffer-tool.html) in PhpStorm documentation.
 
 After installation `Yoast` standard will be available as a choice in PHP Code Sniffer Validation inspection.
+
+## PHPMD
+
+Rules used: codesize, design, unused
