@@ -27,6 +27,9 @@
 		<exclude name="WordPress.WP.I18n.NonSingularStringLiteralDomain"/>
 		<exclude name="WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter" />
 		<exclude name="WordPress.Arrays.ArrayDeclaration.NoComma" />
+		<exclude name="WordPress.Arrays.ArrayIndentation.CloseBraceNotAligned" />
+		<exclude name="WordPress.VIP.PostsPerPage.posts_per_page_posts_per_page" />
+		<exclude name="WordPress.VIP.SlowDBQuery.slow_db_query_tax_query" />
 		<exclude name="WordPress.CSRF.NonceVerification.NoNonceVerification"/>
 		<exclude name="WordPress.Classes.ClassInstantiation.MissingParenthesis" />
 	</rule>
