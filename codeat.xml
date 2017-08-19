@@ -11,7 +11,10 @@
 		<exclude name="Generic.PHP.Syntax" />
 		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines" />
 		<exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"/>
+		<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment" />
+		<exclude name="Squiz.Commenting.BlockComment.NoEmptyLineBefore" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
+		<exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNoCapital" />
 		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.NoSpacesAroundArrayKeys" />
 		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.SpacesAroundArrayKeys" />
 		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
