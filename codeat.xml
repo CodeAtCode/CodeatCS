@@ -2,7 +2,11 @@
 <ruleset name="Codeat">
 	<description>Codeat coding standard.</description>
 
+	<!-- https://github.com/CodeAtCode/PHPDoc-for-PHPCS-PHPCBF/ -->
 	<rule ref="PHPDoc"/>
+
+	<!-- https://github.com/wimg/PHPCompatibility/ -->
+	<rule ref="PHPCompatibility"/>
 
 	<rule ref="WordPress">
 		<exclude name="Generic.Files.LineEndings.InvalidEOLChar" />
