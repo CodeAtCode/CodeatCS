@@ -2,6 +2,14 @@
 <ruleset name="Codeat">
 	<description>Codeat coding standard.</description>
 
+        <exclude-pattern>/vendor/*</exclude-pattern>
+        <exclude-pattern>/node_modules/*</exclude-pattern>
+        <exclude-pattern>freemius</exclude-pattern>
+        <exclude-pattern>/lib/</exclude-pattern>
+        <exclude-pattern>*test*</exclude-pattern>
+        <exclude-pattern>index.php</exclude-pattern>
+        <exclude-pattern>CMB2</exclude-pattern>
+
 	<!-- https://github.com/CodeAtCode/PHPDoc-for-PHPCS-PHPCBF/ -->
 	<rule ref="PHPDoc"/>
 
@@ -53,5 +61,31 @@
 	<rule ref="Wordpress-Docs">
 		<exclude name="Squiz.Commenting.InlineComment.InvalidEndChar" />
 	</rule>
+
+	<rule ref="WordPress.WP.DeprecatedClasses">
+		<properties>
+			<property name="minimum_supported_version" value="4.6"/>
+		</properties>
+        </rule>
+
+
+	<rule ref="WordPress.WP.DeprecatedFunctions">
+		<properties>
+			<property name="minimum_supported_version" value="4.6"/>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.WP.DeprecatedParameters">
+		<properties>
+			<property name="minimum_supported_version" value="4.6"/>
+		</properties>
+        </rule>
+
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array" value="glossary,woo-fiscalita-italiana"/>
+		</properties>
+        </rule>
 
 </ruleset>
