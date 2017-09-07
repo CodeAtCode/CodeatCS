@@ -10,8 +10,36 @@
         <exclude-pattern>index.php</exclude-pattern>
         <exclude-pattern>CMB2</exclude-pattern>
 
-	<!-- https://github.com/CodeAtCode/PHPDoc-for-PHPCS-PHPCBF/ -->
-	<rule ref="PHPDoc"/>
+	<!-- Include some specific sniffs -->
+	<rule ref="Generic.CodeAnalysis.EmptyStatement"/>
+	<rule ref="Generic.Commenting.Todo"/>
+	<rule ref="Generic.Commenting.DocComment"/>
+	<rule ref="Generic.Commenting.DocComment.TagValueIndent"/>
+	<rule ref="Generic.Commenting.DocComment.ParamNotFirst"/>
+	<rule ref="Generic.Commenting.DocComment.ParamGroup"/>
+	<rule ref="Generic.Commenting.DocComment.NonParamGroup"/>
+	<rule ref="Generic.Commenting.DocComment.TagsNotGrouped"/>
+	<rule ref="Generic.Commenting.DocComment.ContentAfterOpen"/>
+	<rule ref="Generic.Commenting.DocComment.SpacingBeforeShort"/>
+	<rule ref="Generic.Commenting.DocComment.ContentBeforeClose"/>
+
+        <rule ref="Squiz.Commenting">
+            <exclude name="Squiz.Commenting.FileComment.WrongStyle" />
+            <exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen" />
+            <exclude name="Squiz.Commenting.PostStatementComment.Found" />
+            <exclude name="Squiz.PHP.DisallowMultipleAssignments.Found" />
+            <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing" />
+            <exclude name="Squiz.Commenting.LongConditionClosingComment.Invalid" />
+            <exclude name="Squiz.Commenting.FunctionComment.Missing" />
+        </rule>
+
+        <rule ref="PEAR.NamingConventions">
+            <exclude name="PEAR.NamingConventions.ValidClassName.Invalid" />
+        </rule>
+        <rule ref="PEAR.NamingConventions.ValidFunctionName">
+            <exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps" />
+            <exclude name="PEAR.NamingConventions.ValidFunctionName.NotCamelCaps" />
+        </rule>
 
 	<!-- https://github.com/wimg/PHPCompatibility/ -->
 	<rule ref="PHPCompatibility"/>
