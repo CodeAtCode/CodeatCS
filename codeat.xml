@@ -2,13 +2,13 @@
 <ruleset name="Codeat">
 	<description>Codeat coding standard.</description>
 
-        <exclude-pattern>/vendor/*</exclude-pattern>
-        <exclude-pattern>/node_modules/*</exclude-pattern>
-        <exclude-pattern>freemius</exclude-pattern>
-        <exclude-pattern>/lib/</exclude-pattern>
-        <exclude-pattern>*test*</exclude-pattern>
-        <exclude-pattern>index.php</exclude-pattern>
-        <exclude-pattern>CMB2</exclude-pattern>
+	<exclude-pattern>/vendor/*</exclude-pattern>
+	<exclude-pattern>/node_modules/*</exclude-pattern>
+	<exclude-pattern>freemius</exclude-pattern>
+	<exclude-pattern>/lib/</exclude-pattern>
+	<exclude-pattern>*test*</exclude-pattern>
+	<exclude-pattern>index.php</exclude-pattern>
+	<exclude-pattern>CMB2</exclude-pattern>
 
 	<!-- Include some specific sniffs -->
 	<rule ref="Generic.CodeAnalysis.EmptyStatement"/>
@@ -23,28 +23,30 @@
 	<rule ref="Generic.Commenting.DocComment.SpacingBeforeShort"/>
 	<rule ref="Generic.Commenting.DocComment.ContentBeforeClose"/>
 
-        <rule ref="Squiz.Commenting">
-            <exclude name="Squiz.Commenting.FileComment.WrongStyle" />
-            <exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen" />
-            <exclude name="Squiz.Commenting.PostStatementComment.Found" />
-            <exclude name="Squiz.PHP.DisallowMultipleAssignments.Found" />
-            <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing" />
-            <exclude name="Squiz.Commenting.LongConditionClosingComment.Invalid" />
-            <exclude name="Squiz.Commenting.FunctionComment.Missing" />
-        </rule>
+	<rule ref="Squiz.Commenting">
+		<exclude name="Squiz.Commenting.FileComment.WrongStyle" />
+		<exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen" />
+		<exclude name="Squiz.Commenting.PostStatementComment.Found" />
+		<exclude name="Squiz.PHP.DisallowMultipleAssignments.Found" />
+		<exclude name="Squiz.Commenting.LongConditionClosingComment.Missing" />
+		<exclude name="Squiz.Commenting.LongConditionClosingComment.Invalid" />
+		<exclude name="Squiz.Commenting.FunctionComment.Missing" />
+	</rule>
 
-        <rule ref="PEAR.NamingConventions">
-            <exclude name="PEAR.NamingConventions.ValidClassName.Invalid" />
-        </rule>
-        <rule ref="PEAR.NamingConventions.ValidFunctionName">
-            <exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps" />
-            <exclude name="PEAR.NamingConventions.ValidFunctionName.NotCamelCaps" />
-        </rule>
+	<rule ref="PEAR.NamingConventions">
+		<exclude name="PEAR.NamingConventions.ValidClassName.Invalid" />
+	</rule>
+	<rule ref="PEAR.NamingConventions.ValidFunctionName">
+		<exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps" />
+		<exclude name="PEAR.NamingConventions.ValidFunctionName.NotCamelCaps" />
+	</rule>
 
 	<!-- https://github.com/wimg/PHPCompatibility/ -->
-	<rule ref="PHPCompatibility"/>
-        <!-- Check for cross-version support for PHP 5.6 and higher. -->
-        <config name="testVersion" value="5.2-"/>
+	<rule ref="PHPCompatibility">
+		<exclude name="PHPCompatibility.PHP.EmptyNonVariable.Found" />
+	</rule>
+	<!-- Check for cross-version support for PHP 5.6 and higher. -->
+	<config name="testVersion" value="5.2-"/>
 
 	<rule ref="WordPress">
 		<exclude name="Generic.Files.LineEndings.InvalidEOLChar" />
@@ -94,7 +96,7 @@
 		<properties>
 			<property name="minimum_supported_version" value="4.6"/>
 		</properties>
-        </rule>
+	</rule>
 
 
 	<rule ref="WordPress.WP.DeprecatedFunctions">
@@ -107,13 +109,13 @@
 		<properties>
 			<property name="minimum_supported_version" value="4.6"/>
 		</properties>
-        </rule>
+	</rule>
 
 
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array" value="glossary,woo-fiscalita-italiana"/>
 		</properties>
-        </rule>
+	</rule>
 
 </ruleset>
