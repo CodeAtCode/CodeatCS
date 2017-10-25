@@ -76,8 +76,9 @@
 		<exclude name="WordPress.Arrays.ArrayDeclaration.NoComma" />
 		<exclude name="WordPress.Arrays.ArrayIndentation.CloseBraceNotAligned" />
 		<exclude name="WordPress.VIP.PostsPerPage.posts_per_page_posts_per_page" />
+		<exclude name="WordPress.Arrays.ArrayIndentation.CloseBraceNotAligned" />
+		<exclude name="WordPress.VIP.PostsPerPage.posts_per_page_posts_per_page" />
 		<exclude name="WordPress.VIP.SlowDBQuery.slow_db_query_tax_query" />
-		<exclude name="WordPress.VIP.RestrictedFunctions.switch_to_blog_switch_to_blog" />
 		<exclude name="WordPress.CSRF.NonceVerification.NoNonceVerification"/>
 		<exclude name="WordPress.Classes.ClassInstantiation.MissingParenthesis" />
 	</rule>
@@ -85,6 +86,9 @@
 	<rule ref="WordPress.VIP.RestrictedFunctions">
 		<properties>
 			<property name="exclude" value="file_get_contents,curl" />
+			<exclude name="WordPress.VIP.RestrictedFunctions.switch_to_blog_switch_to_blog" />
+			<exclude name="WordPress.VIP.RestrictedFunctions.user_meta_update_user_meta"/>
+			<exclude name="WordPress.VIP.RestrictedFunctions.user_meta_get_user_meta"/>
 		</properties>
 	</rule>
 
