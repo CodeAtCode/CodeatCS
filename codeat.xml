@@ -86,10 +86,11 @@
 	<rule ref="WordPress.VIP.RestrictedFunctions">
 		<properties>
 			<property name="exclude" value="file_get_contents,curl" />
-			<exclude name="WordPress.VIP.RestrictedFunctions.switch_to_blog_switch_to_blog" />
-			<exclude name="WordPress.VIP.RestrictedFunctions.user_meta_update_user_meta"/>
-			<exclude name="WordPress.VIP.RestrictedFunctions.user_meta_get_user_meta"/>
 		</properties>
+		<exclude name="WordPress.VIP.RestrictedFunctions.switch_to_blog_switch_to_blog" />
+		<exclude name="WordPress.VIP.RestrictedFunctions.user_meta_update_user_meta"/>
+		<exclude name="WordPress.VIP.RestrictedFunctions.user_meta_get_user_meta"/>
+		<exclude name="WordPress.VIP.RestrictedFunctions.switch_to_blog"/>
 	</rule>
 
 	<rule ref="Wordpress-Docs">
