@@ -31,6 +31,7 @@
 		<exclude name="Squiz.Commenting.LongConditionClosingComment.Missing" />
 		<exclude name="Squiz.Commenting.LongConditionClosingComment.Invalid" />
 		<exclude name="Squiz.Commenting.FunctionComment.Missing" />
+		<exclude name="Squiz.Commenting.FunctionCommentThrowTag.Missing" />
 	</rule>
 
 	<rule ref="PEAR.NamingConventions">
