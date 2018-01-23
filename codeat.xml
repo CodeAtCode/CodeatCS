@@ -27,19 +27,49 @@
 		<exclude name="Squiz.Commenting.FileComment.WrongStyle" />
 		<exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen" />
 		<exclude name="Squiz.Commenting.PostStatementComment.Found" />
-		<exclude name="Squiz.PHP.DisallowMultipleAssignments.Found" />
 		<exclude name="Squiz.Commenting.LongConditionClosingComment.Missing" />
 		<exclude name="Squiz.Commenting.LongConditionClosingComment.Invalid" />
 		<exclude name="Squiz.Commenting.FunctionComment.Missing" />
 		<exclude name="Squiz.Commenting.FunctionCommentThrowTag.Missing" />
+		<exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"/>
+		<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment" />
+		<exclude name="Squiz.Commenting.BlockComment.NoEmptyLineBefore" />
+	</rule>
+
+	<rule ref="Squiz.PHP">
+		<exclude name="Squiz.PHP.DisallowMultipleAssignments.Found" />
+		<exclude name="Squiz.PHP.GlobalKeyword.NotAllowed" />
+                <exclude name="Squiz.PHP.DisallowBooleanStatement.Found" />
+                <exclude name="Squiz.PHP.DisallowInlineIf.Found" />
+	</rule>
+
+        <rule ref="Squiz.WhiteSpace.FunctionSpacing" >
+            <properties>
+                <property name="spacing" value="1" />
+            </properties>
+        </rule>
+
+	<rule ref="Squiz.WhiteSpace">
+		<exclude name="Squiz.Whitespace.CastSpacing.ContainsWhiteSpace" />
+		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines" />
+		<exclude name="Squiz.WhiteSpace.FunctionSpacing.Before" />
+		<exclude name="Squiz.WhiteSpace.FunctionSpacing.After" />
+		<exclude name="Squiz.WhiteSpace.FunctionClosingBraceSpace.SpacingBeforeClose" />
+                <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpaceBeforeCloseBrace" />
+                <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpenBrace" />
+                <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose" />
+                <exclude name="WordPress.WhiteSpace.ControlStructureSpacing.BlankLineAfterEnd" />
 	</rule>
 
 	<rule ref="PEAR.NamingConventions">
 		<exclude name="PEAR.NamingConventions.ValidClassName.Invalid" />
+		<exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore" />
 	</rule>
+
 	<rule ref="PEAR.NamingConventions.ValidFunctionName">
 		<exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps" />
 		<exclude name="PEAR.NamingConventions.ValidFunctionName.NotCamelCaps" />
+		<exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNoCapital" />
 	</rule>
 
 	<!-- https://github.com/wimg/PHPCompatibility/ -->
@@ -54,12 +84,7 @@
 		<exclude name="Generic.Commenting.DocComment.MissingShort" />
 		<exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed" />
 		<exclude name="Generic.PHP.Syntax" />
-		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines" />
-		<exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"/>
-		<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment" />
-		<exclude name="Squiz.Commenting.BlockComment.NoEmptyLineBefore" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
-		<exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNoCapital" />
 		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.NoSpacesAroundArrayKeys" />
 		<exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.SpacesAroundArrayKeys" />
 		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
