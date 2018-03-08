@@ -41,6 +41,8 @@
 		<exclude name="Squiz.PHP.GlobalKeyword.NotAllowed" />
                 <exclude name="Squiz.PHP.DisallowBooleanStatement.Found" />
                 <exclude name="Squiz.PHP.DisallowInlineIf.Found" />
+                <exclude name="Squiz.PHP.DisallowComparisonAssignment.AssignedComparison" />
+                <exclude name="Squiz.PHP.ForbiddenFunctions.Found" />
 	</rule>
 
         <rule ref="Squiz.WhiteSpace.FunctionSpacing" >
@@ -64,12 +66,18 @@
 	<rule ref="PEAR.NamingConventions">
 		<exclude name="PEAR.NamingConventions.ValidClassName.Invalid" />
 		<exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore" />
+		<exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps" />
+        <exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNoCapital" />
+        <exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNameInvalid" />
 	</rule>
 
-	<rule ref="PEAR.NamingConventions.ValidFunctionName">
-		<exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps" />
-		<exclude name="PEAR.NamingConventions.ValidFunctionName.NotCamelCaps" />
-		<exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNoCapital" />
+    <rule ref="PEAR.NamingConventions">
+		<exclude name="PEAR.NamingConventions.ValidClassName.Invalid" />
+		<exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore" />
+	</rule>
+
+	<rule ref="PEAR.Files.IncludingFile">
+		<exclude name="PEAR.Files.IncludingFile.BracketsNotRequired" />
 	</rule>
 
 	<!-- https://github.com/wimg/PHPCompatibility/ -->
@@ -145,7 +153,7 @@
 
 	<rule ref="WordPress.WP.I18n">
 		<properties>
-			<property name="text_domain" type="array" value="glossary,woo-fiscalita-italiana"/>
+			<property name="text_domain" type="array" value="glossary,woo-fiscalita-italiana,genesis"/>
 		</properties>
 	</rule>
 
