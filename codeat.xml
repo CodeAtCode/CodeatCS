@@ -183,7 +183,7 @@
 	</rule>
 
 	<!-- Superglobal input not validated or sanitized. -->
-	<rule ref="WordPress.VIP.ValidatedSanitizedInput">
+	<rule ref="WordPress.Security.ValidatedSanitizedInput">
 		<type>warning</type>
     </rule>
 
