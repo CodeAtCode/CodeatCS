@@ -102,8 +102,8 @@
 		<exclude name="PHPCompatibility.PHP.EmptyNonVariable.Found" />
 		<exclude name="PHPCompatibility.PHP.NewClosure.Found" />
 	</rule>
-	<!-- Check for cross-version support for PHP 5.3 and higher. -->
-	<config name="testVersion" value="5.3"/>
+	<!-- Check for cross-version support for PHP 5.6 and higher. -->
+	<config name="testVersion" value="5.6"/>
 
 	<rule ref="WordPress">
 		<exclude name="Generic.Files.LineEndings.InvalidEOLChar" />
@@ -148,19 +148,19 @@
 
 	<rule ref="WordPress.WP.DeprecatedClasses">
 		<properties>
-			<property name="minimum_supported_version" value="4.7"/>
+			<property name="minimum_supported_version" value="4.9"/>
 		</properties>
 	</rule>
 
 	<rule ref="WordPress.WP.DeprecatedFunctions">
 		<properties>
-			<property name="minimum_supported_version" value="4.7"/>
+			<property name="minimum_supported_version" value="4.9"/>
 		</properties>
 	</rule>
 
 	<rule ref="WordPress.WP.DeprecatedParameters">
 		<properties>
-			<property name="minimum_supported_version" value="4.7"/>
+			<property name="minimum_supported_version" value="4.9"/>
 		</properties>
 	</rule>
 
