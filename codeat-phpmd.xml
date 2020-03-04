@@ -16,6 +16,7 @@
     <rule ref="rulesets/naming.xml" />
     <rule ref="rulesets/unusedcode.xml" >
         <exclude name="UnusedLocalVariable"/>
+        <exclude name="UnusedFormalParameter"/>
     </rule>
 
     <rule ref="rulesets/unusedcode.xml/UnusedLocalVariable">
