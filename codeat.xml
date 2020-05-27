@@ -111,11 +111,14 @@
       <exclude name="WordPress.CSRF.NonceVerification.NoNonceVerification" />
       <exclude name="WordPress.Classes.ClassInstantiation.MissingParenthesis" />
    </rule>
-   <rule ref="WordPress.PHP.StrictInArray" />
-   <rule ref="WordPress.DB.PreparedSQLPlaceholders" />
-   <rule ref="WordPress.CodeAnalysis.EmptyStatement" />
    <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall" />
    <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement" />
+   <rule ref="Generic.CodeAnalysis.UselessOverridingMethod.Found">
+	<severity>0</severity>
+   </rule>
+   <rule ref="WordPress.CodeAnalysis.EmptyStatement" />
+   <rule ref="WordPress.PHP.StrictInArray" />
+   <rule ref="WordPress.DB.PreparedSQLPlaceholders" />
    <rule ref="WordPress.DB.RestrictedFunctions" />
    <rule ref="WordPress.DB.RestrictedClasses" />
    <rule ref="WordPress.PHP.DevelopmentFunctions" />
