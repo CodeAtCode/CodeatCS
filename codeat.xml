@@ -161,4 +161,17 @@
          <property name="text_domain" type="array" value="glossary-by-codeat,woo-fiscalita-italiana,genesis" />
       </properties>
    </rule>
+   <rule ref="SlevomatCodingStandard">
+      <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes" />
+      <exclude name="SlevomatCodingStandard.Whitespaces.DuplicateSpaces" />
+      <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName" />
+      <exclude name="SlevomatCodingStandard.Files.LineLength.LineTooLong" />
+      <exclude name="SlevomatCodingStandard.ControlStructures.DisallowEmpty.DisallowedEmpty" />
+      <exclude name="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFullyQualifiedName" />
+      <exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces.NonFullyQualified" />
+      <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants.NonFullyQualified" />
+      <exclude name="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator.RequiredNumericLiteralSeparator" />
+      <exclude name="SlevomatCodingStandard.Commenting.DisallowCommentAfterCode.DisallowedCommentAfterCode" />
+      <exclude name="SlevomatCodingStandard.ControlStructures.NewWithParentheses.MissingParentheses" />
+   </rule>
 </ruleset>

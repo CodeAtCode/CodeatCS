@@ -6,7 +6,7 @@ CodeatCS  is a project with rulsetes used for the Codeat plugins/themes developm
 
 Set of [PHP Code Sniffer](https://github.com/squizlabs/PHP_CodeSniffer) rules.
 
-Based on [WordPress Coding Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards) project, implementing official [WordPress PHP Coding Standards](https://make.wordpress.org/core/handbook/coding-standards/php/).  
+Based on [WordPress Coding Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards) project, implementing official [WordPress PHP Coding Standards](https://make.wordpress.org/core/handbook/coding-standards/php/) and also [Slevomat Coding Standard}(https://github.com/slevomat/coding-standard).  
 
 ### How to disable rules
 
