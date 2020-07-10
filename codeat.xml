@@ -175,5 +175,12 @@
       <exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces.NonFullyQualified" />
       <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants.NonFullyQualified" />
       <exclude name="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator.RequiredNumericLiteralSeparator" />
+      <exclude name="SlevomatCodingStandard.Functions.TrailingCommaInCall.MissingTrailingComma" />
+   </rule>
+   <!-- Require php 7.1 as minimum for object that is not support on php 7.1 below -->
+   <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
+    <properties>
+       <property name="enableObjectTypeHint" value="false" />
+    </properties>
    </rule>
 </ruleset>
