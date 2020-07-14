@@ -165,6 +165,8 @@
       <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes" />
       <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingNativeTypeHint" />
       <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingNativeTypeHint" />
+      <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification" />
+      <exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingTraversableTypeHintSpecification" />
       <exclude name="SlevomatCodingStandard.Whitespaces.DuplicateSpaces" />
       <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName" />
       <exclude name="SlevomatCodingStandard.Files.LineLength.LineTooLong" />
