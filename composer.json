@@ -1,0 +1,20 @@
+{
+    "name": "codeatcode/codeatcs",
+    "type": "phpcodesniffer-standard",
+    "description": "Codeat PHPCS ruleset for OOP WordPress development on PHP 7.0+, include phpmd ruleset",
+    "license": "MIT",
+    "require": {
+        "php": "~7.0",
+        "squizlabs/php_codesniffer": "^3.5.3",
+        "phpcompatibility/php-compatibility": "*",
+        "phpcompatibility/phpcompatibility-wp": "*",
+        "wp-coding-standards/wpcs": "*",
+        "slevomat/coding-standard": "^6.0.0"
+    },
+    "suggest": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0"
+    },
+    "require-dev": {
+        "phpcsstandards/phpcsdevcs": "^1.0"
+    }
+} 
