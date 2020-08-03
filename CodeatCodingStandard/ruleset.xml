@@ -1,191 +1,191 @@
 <?xml version="1.0"?>
 <ruleset name="Codeat Coding Standard">
-   <description>Codeat coding standard.</description>
-   <!-- Only check PHP files. -->
-   <arg name="extensions" value="php" />
-   <!-- Treat all files as UTF-8. -->
-   <config name="encoding" value="utf-8" />
-   <!-- Show progress. -->
-   <arg value="p" />
-   <exclude-pattern type="relative">^\.git/*</exclude-pattern>
-   <exclude-pattern>/vendor/*</exclude-pattern>
-   <exclude-pattern>/node_modules/*</exclude-pattern>
-   <exclude-pattern>freemius</exclude-pattern>
-   <exclude-pattern>*test*</exclude-pattern>
-   <exclude-pattern>index.php</exclude-pattern>
-   <!-- Include some specific sniffs -->
-   <rule ref="Generic.CodeAnalysis.EmptyStatement" />
-   <rule ref="Generic.Commenting.Todo" />
-   <rule ref="Generic.Commenting.DocComment" />
-   <rule ref="Generic.Commenting.DocComment.TagValueIndent" />
-   <rule ref="Generic.Commenting.DocComment.ParamNotFirst" />
-   <rule ref="Generic.Commenting.DocComment.ParamGroup" />
-   <rule ref="Generic.Commenting.DocComment.NonParamGroup" />
-   <rule ref="Generic.Commenting.DocComment.TagsNotGrouped" />
-   <rule ref="Generic.Commenting.DocComment.ContentAfterOpen" />
-   <rule ref="Generic.Commenting.DocComment.SpacingBeforeShort" />
-   <rule ref="Generic.Commenting.DocComment.ContentBeforeClose" />
-   <!-- Check for PHP Parse errors. -->
-   <rule ref="Generic.PHP.Syntax" />
-   <!-- Check for file encoding problems. -->
-   <rule ref="Generic.Files.ByteOrderMark" />
-   <rule ref="Generic.Commenting.Todo" />
-   <rule ref="Generic.Commenting.Fixme" />
-   <rule ref="Zend.Files.ClosingTag" />
-   <rule ref="Squiz.Commenting">
-      <exclude name="Squiz.Commenting.FileComment.WrongStyle" />
-      <exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen" />
-      <exclude name="Squiz.Commenting.PostStatementComment.Found" />
-      <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing" />
-      <exclude name="Squiz.Commenting.LongConditionClosingComment.Invalid" />
-      <exclude name="Squiz.Commenting.FunctionComment.Missing" />
-      <exclude name="Squiz.Commenting.FunctionCommentThrowTag.Missing" />
-      <exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen" />
-      <exclude name="Squiz.Commenting.FileComment.SpacingAfterComment" />
-      <exclude name="Squiz.Commenting.BlockComment.NoEmptyLineBefore" />
-   </rule>
-   <rule ref="Squiz.PHP">
-      <exclude name="Squiz.PHP.DisallowMultipleAssignments.Found" />
-      <exclude name="Squiz.PHP.GlobalKeyword.NotAllowed" />
-      <exclude name="Squiz.PHP.DisallowBooleanStatement.Found" />
-      <exclude name="Squiz.PHP.DisallowInlineIf.Found" />
-      <exclude name="Squiz.PHP.DisallowComparisonAssignment.AssignedComparison" />
-      <exclude name="Squiz.PHP.ForbiddenFunctions.Found" />
-   </rule>
-   <rule ref="Squiz.WhiteSpace.FunctionSpacing">
-      <properties>
-         <property name="spacing" value="1" />
-      </properties>
-   </rule>
-   <rule ref="Squiz.WhiteSpace">
-      <exclude name="Squiz.Whitespace.CastSpacing.ContainsWhiteSpace" />
-      <exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines" />
-      <exclude name="Squiz.WhiteSpace.FunctionSpacing.Before" />
-      <exclude name="Squiz.WhiteSpace.FunctionSpacing.After" />
-      <exclude name="Squiz.WhiteSpace.FunctionClosingBraceSpace.SpacingBeforeClose" />
-      <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpaceBeforeCloseBrace" />
-      <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpenBrace" />
-      <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose" />
-      <exclude name="WordPress.WhiteSpace.ControlStructureSpacing.BlankLineAfterEnd" />
-   </rule>
-   <rule ref="PEAR.NamingConventions">
-      <exclude name="PEAR.NamingConventions.ValidClassName.Invalid" />
-      <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore" />
-      <exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps" />
-      <exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNoCapital" />
-      <exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNameInvalid" />
-   </rule>
-   <rule ref="PEAR.NamingConventions">
-      <exclude name="PEAR.NamingConventions.ValidClassName.Invalid" />
-      <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore" />
-      <exclude name="PEAR.NamingConventions.ValidFunctionName.PrivateNoUnderscore" />
-   </rule>
-   <rule ref="PEAR.Files.IncludingFile">
-      <exclude name="PEAR.Files.IncludingFile.BracketsNotRequired" />
-   </rule>
-   <!-- https://github.com/wimg/PHPCompatibility/ -->
-   <rule ref="PHPCompatibility">
-      <exclude name="PHPCompatibility.PHP.EmptyNonVariable.Found" />
-      <exclude name="PHPCompatibility.PHP.NewClosure.Found" />
-   </rule>
-   <!-- Check for cross-version support for PHP 7.0 and higher. -->
-   <config name="testVersion" value="7.0" />
-   <rule ref="WordPress">
-      <exclude name="Generic.Files.LineEndings.InvalidEOLChar" />
-      <exclude name="Generic.Commenting.DocComment.MissingShort" />
-      <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed" />
-      <exclude name="Generic.PHP.Syntax" />
-      <exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
-      <exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.NoSpacesAroundArrayKeys" />
-      <exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.SpacesAroundArrayKeys" />
-      <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound" />
-      <exclude name="WordPress.Files.FileName.InvalidClassFileName" />
-      <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
-      <exclude name="WordPress.PHP.YodaConditions" />
-      <exclude name="WordPress.Arrays.ArrayIndentation.ItemNotAligned" />
-      <exclude name="WordPress.WP.I18n.NonSingularStringLiteralDomain" />
-      <exclude name="WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter" />
-      <exclude name="WordPress.Arrays.ArrayDeclaration.NoComma" />
-      <exclude name="WordPress.Arrays.ArrayIndentation.CloseBraceNotAligned" />
-      <exclude name="WordPress.Arrays.ArrayIndentation.CloseBraceNotAligned" />
-      <exclude name="WordPress.CSRF.NonceVerification.NoNonceVerification" />
-      <exclude name="WordPress.Classes.ClassInstantiation.MissingParenthesis" />
-   </rule>
-   <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall" />
-   <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement" />
-   <rule ref="Generic.CodeAnalysis.UselessOverridingMethod.Found">
-	<severity>0</severity>
-   </rule>
-   <rule ref="WordPress.CodeAnalysis.EmptyStatement" />
-   <rule ref="WordPress.PHP.StrictInArray" />
-   <rule ref="WordPress.DB.PreparedSQLPlaceholders" />
-   <rule ref="WordPress.DB.RestrictedFunctions" />
-   <rule ref="WordPress.DB.RestrictedClasses" />
-   <rule ref="WordPress.PHP.DevelopmentFunctions" />
-   <rule ref="WordPress.PHP.DiscouragedPHPFunctions" />
-   <rule ref="WordPress.WP.AlternativeFunctions" />
-   <rule ref="WordPress.WP.DiscouragedConstants" />
-   <rule ref="WordPress.WP.DiscouragedFunctions" />
-   <rule ref="WordPress.WP.EnqueuedResources" />
-   <rule ref="WordPress.NamingConventions.PrefixAllGlobals" />
-   <rule ref="Wordpress-Docs">
-      <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar" />
-   </rule>
-   <rule ref="WordPress.WP.DeprecatedClasses">
-      <properties>
-         <property name="minimum_supported_version" value="5.3" />
-      </properties>
-   </rule>
-   <rule ref="WordPress.WP.DeprecatedFunctions">
-      <properties>
-         <property name="minimum_supported_version" value="5.3" />
-      </properties>
-   </rule>
-   <rule ref="WordPress.WP.DeprecatedParameters">
-      <properties>
-         <property name="minimum_supported_version" value="5.3" />
-      </properties>
-   </rule>
-   <!-- Superglobal input not validated or sanitized. -->
-   <rule ref="WordPress.Security.ValidatedSanitizedInput">
-      <type>warning</type>
-   </rule>
-   <rule ref="Generic.CodeAnalysis.EmptyStatement">
-      <type>warning</type>
-   </rule>
-   <rule ref="Squiz.PHP.DisallowSizeFunctionsInLoops">
-      <type>warning</type>
-   </rule>
-   <rule ref="WordPress.WP.I18n">
-      <properties>
-         <property name="text_domain" type="array" value="glossary-by-codeat,woo-fiscalita-italiana,genesis" />
-      </properties>
-   </rule>
-   <rule ref="SlevomatCodingStandard">
-      <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes" />
-      <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingNativeTypeHint" />
-      <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification" />
-      <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingNativeTypeHint" />
-      <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification" />
-      <exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingTraversableTypeHintSpecification" />
-      <exclude name="SlevomatCodingStandard.Whitespaces.DuplicateSpaces" />
-      <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName" />
-      <exclude name="SlevomatCodingStandard.Files.LineLength.LineTooLong" />
-      <exclude name="SlevomatCodingStandard.Commenting.DisallowCommentAfterCode.DisallowedCommentAfterCode" />
-      <exclude name="SlevomatCodingStandard.ControlStructures.DisallowEmpty.DisallowedEmpty" />
-      <exclude name="SlevomatCodingStandard.ControlStructures.NewWithParentheses.MissingParentheses" />
-      <exclude name="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison.DisallowedYodaComparison" />
-      <exclude name="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFullyQualifiedName" />
-      <exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces.NonFullyQualified" />
-      <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants.NonFullyQualified" />
-      <exclude name="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator.RequiredNumericLiteralSeparator" />
-      <exclude name="SlevomatCodingStandard.Functions.TrailingCommaInCall.MissingTrailingComma" />
-      <exclude name="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable.DisallowedSuperGlobalVariable" />
-   </rule>
-   <!-- Require php 7.1 as minimum for object that is not support on php 7.1 below -->
-   <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
-     <properties>
-       <property name="enableObjectTypeHint" value="false" />
-     </properties>
-   </rule>
+    <description>Codeat coding standard.</description>
+    <!-- Only check PHP files. -->
+    <arg name="extensions" value="php"/>
+    <!-- Treat all files as UTF-8. -->
+    <config name="encoding" value="utf-8"/>
+    <!-- Show progress. -->
+    <arg value="p"/>
+    <exclude-pattern type="relative">^\.git/*</exclude-pattern>
+    <exclude-pattern>/vendor/*</exclude-pattern>
+    <exclude-pattern>/node_modules/*</exclude-pattern>
+    <exclude-pattern>freemius</exclude-pattern>
+    <exclude-pattern>*test*</exclude-pattern>
+    <exclude-pattern>index.php</exclude-pattern>
+    <!-- Include some specific sniffs -->
+    <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
+    <rule ref="Generic.Commenting.Todo"/>
+    <rule ref="Generic.Commenting.DocComment"/>
+    <rule ref="Generic.Commenting.DocComment.TagValueIndent"/>
+    <rule ref="Generic.Commenting.DocComment.ParamNotFirst"/>
+    <rule ref="Generic.Commenting.DocComment.ParamGroup"/>
+    <rule ref="Generic.Commenting.DocComment.NonParamGroup"/>
+    <rule ref="Generic.Commenting.DocComment.TagsNotGrouped"/>
+    <rule ref="Generic.Commenting.DocComment.ContentAfterOpen"/>
+    <rule ref="Generic.Commenting.DocComment.SpacingBeforeShort"/>
+    <rule ref="Generic.Commenting.DocComment.ContentBeforeClose"/>
+    <!-- Check for PHP Parse errors. -->
+    <rule ref="Generic.PHP.Syntax"/>
+    <!-- Check for file encoding problems. -->
+    <rule ref="Generic.Files.ByteOrderMark"/>
+    <rule ref="Generic.Commenting.Todo"/>
+    <rule ref="Generic.Commenting.Fixme"/>
+    <rule ref="Zend.Files.ClosingTag"/>
+    <rule ref="Squiz.Commenting">
+        <exclude name="Squiz.Commenting.FileComment.WrongStyle"/>
+        <exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"/>
+        <exclude name="Squiz.Commenting.PostStatementComment.Found"/>
+        <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing"/>
+        <exclude name="Squiz.Commenting.LongConditionClosingComment.Invalid"/>
+        <exclude name="Squiz.Commenting.FunctionComment.Missing"/>
+        <exclude name="Squiz.Commenting.FunctionCommentThrowTag.Missing"/>
+        <exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"/>
+        <exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"/>
+        <exclude name="Squiz.Commenting.BlockComment.NoEmptyLineBefore"/>
+    </rule>
+    <rule ref="Squiz.PHP">
+        <exclude name="Squiz.PHP.DisallowMultipleAssignments.Found"/>
+        <exclude name="Squiz.PHP.GlobalKeyword.NotAllowed"/>
+        <exclude name="Squiz.PHP.DisallowBooleanStatement.Found"/>
+        <exclude name="Squiz.PHP.DisallowInlineIf.Found"/>
+        <exclude name="Squiz.PHP.DisallowComparisonAssignment.AssignedComparison"/>
+        <exclude name="Squiz.PHP.ForbiddenFunctions.Found"/>
+    </rule>
+    <rule ref="Squiz.WhiteSpace.FunctionSpacing">
+        <properties>
+            <property name="spacing" value="1"/>
+        </properties>
+    </rule>
+    <rule ref="Squiz.WhiteSpace">
+        <exclude name="Squiz.Whitespace.CastSpacing.ContainsWhiteSpace"/>
+        <exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines"/>
+        <exclude name="Squiz.WhiteSpace.FunctionSpacing.Before"/>
+        <exclude name="Squiz.WhiteSpace.FunctionSpacing.After"/>
+        <exclude name="Squiz.WhiteSpace.FunctionClosingBraceSpace.SpacingBeforeClose"/>
+        <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpaceBeforeCloseBrace"/>
+        <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpenBrace"/>
+        <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingBeforeClose"/>
+        <exclude name="WordPress.WhiteSpace.ControlStructureSpacing.BlankLineAfterEnd"/>
+    </rule>
+    <rule ref="PEAR.NamingConventions">
+        <exclude name="PEAR.NamingConventions.ValidClassName.Invalid"/>
+        <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+        <exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps"/>
+        <exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNoCapital"/>
+        <exclude name="PEAR.NamingConventions.ValidFunctionName.FunctionNameInvalid"/>
+    </rule>
+    <rule ref="PEAR.NamingConventions">
+        <exclude name="PEAR.NamingConventions.ValidClassName.Invalid"/>
+        <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+        <exclude name="PEAR.NamingConventions.ValidFunctionName.PrivateNoUnderscore"/>
+    </rule>
+    <rule ref="PEAR.Files.IncludingFile">
+        <exclude name="PEAR.Files.IncludingFile.BracketsNotRequired"/>
+    </rule>
+    <!-- https://github.com/wimg/PHPCompatibility/ -->
+    <rule ref="PHPCompatibility">
+        <exclude name="PHPCompatibility.PHP.EmptyNonVariable.Found"/>
+        <exclude name="PHPCompatibility.PHP.NewClosure.Found"/>
+    </rule>
+    <!-- Check for cross-version support for PHP 7.0 and higher. -->
+    <config name="testVersion" value="7.0"/>
+    <rule ref="WordPress">
+        <exclude name="Generic.Files.LineEndings.InvalidEOLChar"/>
+        <exclude name="Generic.Commenting.DocComment.MissingShort"/>
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed"/>
+        <exclude name="Generic.PHP.Syntax"/>
+        <exclude name="PEAR.Functions.FunctionCallSignature.Indent"/>
+        <exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.NoSpacesAroundArrayKeys"/>
+        <exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.SpacesAroundArrayKeys"/>
+        <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound"/>
+        <exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
+        <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+        <exclude name="WordPress.PHP.YodaConditions"/>
+        <exclude name="WordPress.Arrays.ArrayIndentation.ItemNotAligned"/>
+        <exclude name="WordPress.WP.I18n.NonSingularStringLiteralDomain"/>
+        <exclude name="WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter"/>
+        <exclude name="WordPress.Arrays.ArrayDeclaration.NoComma"/>
+        <exclude name="WordPress.Arrays.ArrayIndentation.CloseBraceNotAligned"/>
+        <exclude name="WordPress.Arrays.ArrayIndentation.CloseBraceNotAligned"/>
+        <exclude name="WordPress.CSRF.NonceVerification.NoNonceVerification"/>
+        <exclude name="WordPress.Classes.ClassInstantiation.MissingParenthesis"/>
+    </rule>
+    <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall"/>
+    <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
+    <rule ref="Generic.CodeAnalysis.UselessOverridingMethod.Found">
+        <severity>0</severity>
+    </rule>
+    <rule ref="WordPress.CodeAnalysis.EmptyStatement"/>
+    <rule ref="WordPress.PHP.StrictInArray"/>
+    <rule ref="WordPress.DB.PreparedSQLPlaceholders"/>
+    <rule ref="WordPress.DB.RestrictedFunctions"/>
+    <rule ref="WordPress.DB.RestrictedClasses"/>
+    <rule ref="WordPress.PHP.DevelopmentFunctions"/>
+    <rule ref="WordPress.PHP.DiscouragedPHPFunctions"/>
+    <rule ref="WordPress.WP.AlternativeFunctions"/>
+    <rule ref="WordPress.WP.DiscouragedConstants"/>
+    <rule ref="WordPress.WP.DiscouragedFunctions"/>
+    <rule ref="WordPress.WP.EnqueuedResources"/>
+    <rule ref="WordPress.NamingConventions.PrefixAllGlobals"/>
+    <rule ref="Wordpress-Docs">
+        <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+    </rule>
+    <rule ref="WordPress.WP.DeprecatedClasses">
+        <properties>
+            <property name="minimum_supported_version" value="5.3"/>
+        </properties>
+    </rule>
+    <rule ref="WordPress.WP.DeprecatedFunctions">
+        <properties>
+            <property name="minimum_supported_version" value="5.3"/>
+        </properties>
+    </rule>
+    <rule ref="WordPress.WP.DeprecatedParameters">
+        <properties>
+            <property name="minimum_supported_version" value="5.3"/>
+        </properties>
+    </rule>
+    <!-- Superglobal input not validated or sanitized. -->
+    <rule ref="WordPress.Security.ValidatedSanitizedInput">
+        <type>warning</type>
+    </rule>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement">
+        <type>warning</type>
+    </rule>
+    <rule ref="Squiz.PHP.DisallowSizeFunctionsInLoops">
+        <type>warning</type>
+    </rule>
+    <rule ref="WordPress.WP.I18n">
+        <properties>
+            <property name="text_domain" type="array" value="glossary-by-codeat,woo-fiscalita-italiana,genesis"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard">
+        <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingNativeTypeHint"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingNativeTypeHint"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingTraversableTypeHintSpecification"/>
+        <exclude name="SlevomatCodingStandard.Whitespaces.DuplicateSpaces"/>
+        <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
+        <exclude name="SlevomatCodingStandard.Files.LineLength.LineTooLong"/>
+        <exclude name="SlevomatCodingStandard.Commenting.DisallowCommentAfterCode.DisallowedCommentAfterCode"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.DisallowEmpty.DisallowedEmpty"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.NewWithParentheses.MissingParentheses"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison.DisallowedYodaComparison"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFullyQualifiedName"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces.NonFullyQualified"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants.NonFullyQualified"/>
+        <exclude name="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator.RequiredNumericLiteralSeparator"/>
+        <exclude name="SlevomatCodingStandard.Functions.TrailingCommaInCall.MissingTrailingComma"/>
+        <exclude name="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable.DisallowedSuperGlobalVariable"/>
+    </rule>
+    <!-- Require php 7.1 as minimum for object that is not support on php 7.1 below -->
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
+        <properties>
+            <property name="enableObjectTypeHint" value="false"/>
+        </properties>
+    </rule>
 </ruleset>
