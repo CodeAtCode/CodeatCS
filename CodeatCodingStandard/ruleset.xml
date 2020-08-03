@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ruleset name="Codeat">
+<?xml version="1.0"?>
+<ruleset name="Codeat Coding Standard">
    <description>Codeat coding standard.</description>
    <!-- Only check PHP files. -->
    <arg name="extensions" value="php" />
@@ -184,8 +184,8 @@
    </rule>
    <!-- Require php 7.1 as minimum for object that is not support on php 7.1 below -->
    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
-    <properties>
+     <properties>
        <property name="enableObjectTypeHint" value="false" />
-    </properties>
+     </properties>
    </rule>
 </ruleset>
