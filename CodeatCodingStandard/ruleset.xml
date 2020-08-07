@@ -155,6 +155,7 @@
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard">
+	<exclude name="SlevomatCodingStandard.PHP.ShortList.LongListUsed"/>
         <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
         <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingNativeTypeHint"/>
         <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification"/>
@@ -177,6 +178,7 @@
         <exclude name="SlevomatCodingStandard.Commenting.RequireOneLineDocComment.MultiLineDocComment"/>
         <exclude name="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment.MultiLinePropertyComment"/>
         <exclude name="SlevomatCodingStandard.Commenting.DisallowCommentAfterCode.DisallowedCommentAfterCode"/>
+	<exclude name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators.DisallowedPreIncrementOperator"/>
     </rule>
     <!-- Require php 7.1 as minimum for object that is not support on php 7.1 below -->
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
