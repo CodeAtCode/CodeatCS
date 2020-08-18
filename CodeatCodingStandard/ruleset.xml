@@ -149,11 +149,6 @@
     <rule ref="WordPress.Security.ValidatedSanitizedInput">
         <type>warning</type>
     </rule>
-    <rule ref="WordPress.WP.I18n">
-        <properties>
-            <property name="text_domain" type="array" value="glossary-by-codeat,woo-fiscalita-italiana,genesis"/>
-        </properties>
-    </rule>
     <rule ref="SlevomatCodingStandard">
 	<exclude name="SlevomatCodingStandard.PHP.ShortList.LongListUsed"/>
         <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
