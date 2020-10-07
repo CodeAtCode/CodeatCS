@@ -1,0 +1,27 @@
+
+includes:
+    - /home/mte90/.composer/vendor/szepeviktor/phpstan-wordpress/extension.neon
+parameters:
+    level: max
+    inferPrivatePropertyTypeFromConstructor: true
+    # Void as typehints are available only on PHP 7.1+
+    checkMissingIterableValueType: false
+    paths:
+        - ./
+    excludes_analyse:
+        - vendor/
+        - tests/
+    ignoreErrors:
+        # Void as typehints are available only on PHP 7.1+
+        - '#has no return typehint specified\.$#'
+        # In wp_count_posts(): $counts = (object) $counts;
+        - '#^Access to an undefined property object::\$pending\.$#'
+        # AMP plugin stubs can be also generated
+        - '#^Function is_amp_endpoint not found\.$#'
+        # PHPStan is better safe than sorry!
+        # https://github.com/phpstan/phpstan/issues/1060#issuecomment-667675767
+        - '#^Argument of an invalid type object supplied for foreach, only iterables are supported\.$#'
+        # https://github.com/WPBP/WordPress-Plugin-Boilerplate-Powered/issues/162
+        - '#^Parameter \#2 \$object_id of function cmb2_metabox_form expects int, string given\.$#'
+        # TODO Any can POST an array in a $_POST item, May I send a PR?
+        - '#^Parameter \#1 \$str of function sanitize_text_field expects string, array<string>\|string given\.$#'
