@@ -87,8 +87,8 @@
         <exclude name="PHPCompatibility.PHP.EmptyNonVariable.Found"/>
         <exclude name="PHPCompatibility.PHP.NewClosure.Found"/>
     </rule>
-    <!-- Check for cross-version support for PHP 7.0 and higher. -->
-    <config name="testVersion" value="7.0"/>
+    <!-- Check for cross-version support for PHP 7.1 and higher. -->
+    <config name="testVersion" value="7.2"/>
     <rule ref="WordPress">
         <exclude name="Generic.Files.LineEndings.InvalidEOLChar"/>
         <exclude name="Generic.Commenting.DocComment.MissingShort"/>
