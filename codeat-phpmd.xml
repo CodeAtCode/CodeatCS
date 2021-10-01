@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset xmlns="http://pmd.sf.net/ruleset/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Standard PHPMD" xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0                      http://pmd.sf.net/ruleset_xml_schema.xsd" xsi:noNamespaceSchemaLocation="                      http://pmd.sf.net/ruleset_xml_schema.xsd">
+<ruleset xmlns="http://pmd.sf.net/ruleset/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Standard PHPMD" xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0                      http://pmd.sf.net/ruleset_xml_schema.xsd" xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
     <description>
         Standard PHPMD
     </description>
@@ -21,6 +21,12 @@
         <priority>1</priority>
         <properties>
             <property name="allow-unused-foreach-variables" value="true"/>
+        </properties>
+    </rule>
+    <rule ref="rulesets/naming.xml/ShortVariable">
+        <priority>1</priority>
+        <properties>
+            <property name="exceptions" value="is" />
         </properties>
     </rule>
 </ruleset>
