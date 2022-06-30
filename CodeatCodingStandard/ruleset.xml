@@ -46,6 +46,7 @@
         <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing"/>
         <exclude name="Squiz.Commenting.LongConditionClosingComment.Invalid"/>
         <exclude name="Squiz.Commenting.FunctionComment.Missing"/>
+        <exclude name="Squiz.Commenting.FunctionComment.ThrowsNotCapital"/>
         <exclude name="Squiz.Commenting.FunctionCommentThrowTag.Missing"/>
         <exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"/>
         <exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"/>
