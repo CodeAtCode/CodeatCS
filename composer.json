@@ -9,7 +9,7 @@
         "phpcompatibility/php-compatibility": "*",
         "phpcompatibility/phpcompatibility-wp": "*",
         "wp-coding-standards/wpcs": "*",
-        "slevomat/coding-standard": "^7.0.18"
+        "slevomat/coding-standard": "^8.5.2"
     },
     "suggest": {
         "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0"
