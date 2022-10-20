@@ -214,4 +214,14 @@
             <property name="maxLinesLength" value="50"/>
         </properties>
     </rule>
+    <rule ref="SlevomatCodingStandard.Complexity.Cognitive.ComplexityTooHigh">
+        <properties>
+            <property name="maxComplexity" value="10"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Files.FileLength.FileTooLong">
+        <properties>
+            <property name="maxLinesLength" value="260"/>
+        </properties>
+    </rule>
 </ruleset>
