@@ -98,7 +98,7 @@
         <exclude name="PHPCompatibility.PHP.NewClosure.Found"/>
     </rule>
     <!-- Check for cross-version support for PHP 7.1 and higher. -->
-    <config name="testVersion" value="7.2"/>
+    <config name="testVersion" value="7.3"/>
     <rule ref="WordPress">
         <exclude name="Generic.Files.LineEndings.InvalidEOLChar"/>
         <exclude name="Generic.Commenting.DocComment.MissingShort"/>
@@ -143,17 +143,17 @@
     <rule ref="WordPress.WP.EnqueuedResources"/>
     <rule ref="WordPress.WP.DeprecatedClasses">
         <properties>
-            <property name="minimum_supported_version" value="5.3"/>
+            <property name="minimum_supported_version" value="5.5"/>
         </properties>
     </rule>
     <rule ref="WordPress.WP.DeprecatedFunctions">
         <properties>
-            <property name="minimum_supported_version" value="5.3"/>
+            <property name="minimum_supported_version" value="5.5"/>
         </properties>
     </rule>
     <rule ref="WordPress.WP.DeprecatedParameters">
         <properties>
-            <property name="minimum_supported_version" value="5.3"/>
+            <property name="minimum_supported_version" value="5.5"/>
         </properties>
     </rule>
     <!-- Superglobal input not validated or sanitized. -->
@@ -178,6 +178,7 @@
         <exclude name="SlevomatCodingStandard.Functions.RequireArrowFunction.RequiredArrowFunction"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.DisallowEmpty.DisallowedEmpty"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.NewWithParentheses.MissingParentheses"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.DisallowShortTernaryOperator.DisallowedShortTernaryOperator" />
         <exclude name="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison.DisallowedYodaComparison"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.RequireYodaComparison.RequiredYodaComparison"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing.IncorrectLinesCountAfterLastControlStructure"/>
