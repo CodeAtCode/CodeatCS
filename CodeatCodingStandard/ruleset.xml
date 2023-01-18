@@ -226,4 +226,8 @@
             <property name="maxLinesLength" value="260"/>
         </properties>
     </rule>
+
+    <rule ref="SlevomatCodingStandard">
+        <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses" />
+</rule>
 </ruleset>
