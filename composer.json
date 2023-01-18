@@ -8,7 +8,7 @@
         "squizlabs/php_codesniffer": "^3.6.2",
         "phpcompatibility/php-compatibility": "*",
         "phpcompatibility/phpcompatibility-wp": "*",
-        "wp-coding-standards/wpcs": "*",
+        "wp-coding-standards/wpcs": "dev-develop#2.3.0-fix-vsprintf",
         "slevomat/coding-standard": "^8.5.2"
     },
     "suggest": {
