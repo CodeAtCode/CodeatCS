@@ -202,6 +202,7 @@
         <exclude name="SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace.SpaceAfterArrayOpen"/>
         <exclude name="SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace.SpaceBeforeArrayClose"/>
         <exclude name="SlevomatCodingStandard.Arrays.AlphabeticallySortedByKeys.IncorrectKeyOrder"/>
+        <exclude name="SlevomatCodingStandard.Arrays.DisallowPartiallyKeyed.DisallowedPartiallyKeyed"/>
     </rule>
     <!-- Require php 7.1 as minimum for object that is not support on php 7.1 below -->
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
