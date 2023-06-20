@@ -41,6 +41,12 @@
     </properties>
     </rule>
     <rule ref="Zend.Files.ClosingTag"/>
+    <rule ref="Generic.WhiteSpace">
+        <exclude name="Generic.WhiteSpace.DisallowTabIndent.TabsUsed"/>
+    </rule>
+    <rule ref="Generic.WhiteSpace">
+        <exclude name="Generic.Files.LineLength.TooLong"/>
+    </rule>
     <rule ref="Squiz.Commenting">
         <exclude name="Squiz.Commenting.PostStatementComment.Found"/>
         <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing"/>
@@ -53,6 +59,13 @@
         <exclude name="Squiz.Commenting.FileComment.WrongStyle"/>
         <exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"/>
         <exclude name="Squiz.Commenting.BlockComment.NoEmptyLineBefore"/>
+    </rule>
+    <rule ref="Squiz.Commenting">
+        <exclude name="Squiz.Classes.ValidClassName.NotCamelCaps"/>
+    </rule>
+    <rule ref="Squiz.Functions">
+        <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+        <exclude name="Squiz.Functions.GlobalFunction.Found"/>
     </rule>
     <rule ref="Squiz.PHP">
         <exclude name="Squiz.PHP.GlobalKeyword.NotAllowed"/>
@@ -234,12 +247,22 @@
 
     <rule ref="PSR12">
         <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses" />
+        <exclude name="PSR12.ControlStructures.ControlStructureSpacing.SpaceBeforeCloseBrace"/>
+        <exclude name="PSR12.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/>
+        <exclude name="PSR12.Classes.OpeningBraceSpace.Found"/>
+        <exclude name="PSR12.ControlStructures.ControlStructureSpacing.LineIndent"/>
+        <exclude name="PSR12.ControlStructures.ControlStructureSpacing.FirstExpressionLine"/>
+        <exclude name="PSR12.ControlStructures.ControlStructureSpacing.CloseParenthesisLine"/>
     </rule>
     <rule ref="PSR2">
+        <exclude name="PSR2.Methods.FunctionCallSignature.Indent"/>
         <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
-        <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpaceBeforeCloseBrace"/>
-        <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/>
         <exclude name="PSR2.Methods.FunctionCallSignature.SpaceBeforeCloseBracket"/>
         <exclude name="PSR2.Methods.FunctionCallSignature.SpaceAfterOpenBracket"/>
+        <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpaceBeforeCloseBrace"/>
+        <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/>
+    </rule>
+    <rule ref="PSR1">
+        <exclude name="PSR1.Methods.CamelCapsMethodName.NotCamelCaps"/>
     </rule>
 </ruleset>
