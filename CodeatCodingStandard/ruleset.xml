@@ -35,7 +35,7 @@
     <rule ref="Generic.Commenting.Fixme"/>
     <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
     <rule ref="Generic.WhiteSpace.ScopeIndent">
-    <rule ref="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody">
+    <rule ref="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
     <properties>
         <property name="indent" value="4"/>
         <property name="tabIndent" value="true"/>
