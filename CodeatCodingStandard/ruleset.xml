@@ -157,17 +157,17 @@
     <rule ref="WordPress.WP.EnqueuedResources"/>
     <rule ref="WordPress.WP.DeprecatedClasses">
         <properties>
-            <property name="minimum_supported_version" value="5.5"/>
+            <property name="minimum_wp_version" value="5.8"/>
         </properties>
     </rule>
     <rule ref="WordPress.WP.DeprecatedFunctions">
         <properties>
-            <property name="minimum_supported_version" value="5.5"/>
+            <property name="minimum_wp_version" value="5.8"/>
         </properties>
     </rule>
     <rule ref="WordPress.WP.DeprecatedParameters">
         <properties>
-            <property name="minimum_supported_version" value="5.5"/>
+            <property name="minimum_wp_version" value="5.8"/>
         </properties>
     </rule>
     <!-- Superglobal input not validated or sanitized. -->
