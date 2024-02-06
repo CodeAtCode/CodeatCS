@@ -132,6 +132,7 @@
         <exclude name="WordPress.WhiteSpace.ControlStructureSpacing.BlankLineAfterEnd"/>
         <exclude name="WordPress.CSRF.NonceVerification.NoNonceVerification"/>
         <exclude name="WordPress.Classes.ClassInstantiation.MissingParenthesis"/>
+        <exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores"/>
     </rule>
     <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall"/>
     <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
