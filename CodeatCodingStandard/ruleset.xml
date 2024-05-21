@@ -47,6 +47,9 @@
     <rule ref="Generic.WhiteSpace">
         <exclude name="Generic.Files.LineLength.TooLong"/>
     </rule>
+    <rule ref="Generic.CodeAnalysis">
+        <exclude name="Generic.CodeAnalysis.RequireExplicitBooleanOperatorPrecedence.MissingParentheses"/>
+    </rule>
     <rule ref="Squiz.Commenting">
         <exclude name="Squiz.Commenting.PostStatementComment.Found"/>
         <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing"/>
