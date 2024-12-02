@@ -52,6 +52,7 @@
     </rule>
     <rule ref="Squiz.Commenting">
         <exclude name="Squiz.Commenting.PostStatementComment.Found"/>
+        <exclude name="Squiz.Commenting.PostStatementComment.AnnotationFound"/>
         <exclude name="Squiz.Commenting.LongConditionClosingComment.Missing"/>
         <exclude name="Squiz.Commenting.LongConditionClosingComment.Invalid"/>
         <exclude name="Squiz.Commenting.FunctionComment.Missing"/>
