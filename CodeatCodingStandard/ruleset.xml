@@ -183,6 +183,7 @@
     <rule ref="SlevomatCodingStandard">
         <exclude name="SlevomatCodingStandard.PHP.DisallowReference.DisallowedAssigningByReference"/>
         <exclude name="SlevomatCodingStandard.PHP.ShortList.LongListUsed"/>
+        <exclude name="SlevomatCodingStandard.Files.FileLength.FileTooLong"/>
         <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
         <exclude name="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint.DisallowedMixedTypeHint"/>
         <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingNativeTypeHint"/>
