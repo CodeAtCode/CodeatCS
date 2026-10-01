@@ -78,7 +78,7 @@
         <exclude name="Squiz.PHP.DisallowBooleanStatement.Found"/>
         <exclude name="Squiz.PHP.DisallowInlineIf.Found"/>
         <exclude name="Squiz.PHP.DisallowComparisonAssignment.AssignedComparison"/>
-        <exclude name="Squiz.PHP.ForbiddenFunctions.Found"/>
+        <exclude name="Generic.PHP.ForbiddenFunctions.Found"/>
     </rule>
     <rule ref="Squiz.PHP.DisallowSizeFunctionsInLoops">
         <type>warning</type>
@@ -89,7 +89,7 @@
         </properties>
     </rule>
     <rule ref="Squiz.WhiteSpace">
-        <exclude name="Squiz.Whitespace.CastSpacing.ContainsWhiteSpace"/>
+        <exclude name="Squiz.WhiteSpace.CastSpacing.ContainsWhiteSpace"/>
         <exclude name="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines"/>
         <exclude name="Squiz.WhiteSpace.FunctionSpacing.Before"/>
         <exclude name="Squiz.WhiteSpace.FunctionSpacing.After"/>
@@ -112,8 +112,8 @@
     </rule>
     <!-- https://github.com/wimg/PHPCompatibility/ -->
     <rule ref="PHPCompatibility">
-        <exclude name="PHPCompatibility.PHP.EmptyNonVariable.Found"/>
-        <exclude name="PHPCompatibility.PHP.NewClosure.Found"/>
+        <exclude name="PHPCompatibility.LanguageConstructs.NewEmptyNonVariable.Found"/>
+        <exclude name="PHPCompatibility.FunctionDeclarations.NewClosure.Found"/>
     </rule>
     <!-- Check for cross-version support for PHP 7.1 and higher. -->
     <config name="testVersion" value="7.3"/>
@@ -126,16 +126,14 @@
         <exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.NoSpacesAroundArrayKeys"/>
         <exclude name="WordPress.Arrays.ArrayKeySpacingRestrictions.SpacesAroundArrayKeys"/>
         <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound"/>
-        <exclude name="WordPress.Arrays.ArrayDeclaration.NoComma"/>
+        <exclude name="WordPress.Arrays.ArrayDeclarationSpacing.NoComma"/>
         <exclude name="WordPress.Arrays.ArrayIndentation.CloseBraceNotAligned"/>
         <exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
         <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
-        <exclude name="WordPress.PHP.YodaConditions"/>
         <exclude name="WordPress.WP.I18n.NonSingularStringLiteralDomain"/>
         <exclude name="WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter"/>
         <exclude name="WordPress.WhiteSpace.ControlStructureSpacing.BlankLineAfterEnd"/>
-        <exclude name="WordPress.CSRF.NonceVerification.NoNonceVerification"/>
-        <exclude name="WordPress.Classes.ClassInstantiation.MissingParenthesis"/>
+        <exclude name="WordPress.Security.NonceVerification.NoNonceVerification"/>
         <exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores"/>
         <exclude name="WordPress.NamingConventions.ValidHookName.NotLowercase"/>
     </rule>
@@ -184,7 +182,6 @@
         <exclude name="SlevomatCodingStandard.PHP.DisallowReference.DisallowedAssigningByReference"/>
         <exclude name="SlevomatCodingStandard.PHP.ShortList.LongListUsed"/>
         <exclude name="SlevomatCodingStandard.Files.FileLength.FileTooLong"/>
-        <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
         <exclude name="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint.DisallowedMixedTypeHint"/>
         <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingNativeTypeHint"/>
         <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification"/>
@@ -192,8 +189,6 @@
         <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>
         <exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingTraversableTypeHintSpecification"/>
         <exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint"/>
-        <exclude name="SlevomatCodingStandard.Whitespaces.DuplicateSpaces"/>
-        <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>
         <exclude name="SlevomatCodingStandard.Files.LineLength.LineTooLong"/>
         <exclude name="SlevomatCodingStandard.Functions.StaticClosure.ClosureNotStatic"/>
         <exclude name="SlevomatCodingStandard.Functions.RequireArrowFunction.RequiredArrowFunction"/>
@@ -211,7 +206,6 @@
         <exclude name="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator.RequiredNumericLiteralSeparator"/>
         <exclude name="SlevomatCodingStandard.Classes.ForbiddenPublicProperty.ForbiddenPublicProperty"/>
         <exclude name="SlevomatCodingStandard.Classes.RequireAbstractOrFinal.ClassNeitherAbstractNorFinal"/>
-        <exclude name="SlevomatCodingStandard.Functions.TrailingCommaInCall.MissingTrailingComma"/>
         <exclude name="SlevomatCodingStandard.Functions.RequireMultiLineCall.RequiredMultiLineCall"/>
         <exclude name="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall.MissingTrailingComma"/>
         <exclude name="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration.MissingTrailingComma"/>
@@ -248,7 +242,6 @@
             <property name="maxLinesLength" value="260"/>
         </properties>
     </rule>
-
     <rule ref="PSR12">
         <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses" />
         <exclude name="PSR12.ControlStructures.ControlStructureSpacing.SpaceBeforeCloseBrace"/>
